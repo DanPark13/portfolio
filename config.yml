@@ -1,0 +1,98 @@
+baseURL: 'https://danpark13.github.io/'
+languageCode: en-us
+title: Daniel Park
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+    assets:
+      favicon: "/static/favicon.ico"
+      favicon16x16:  "/static/favicon-16x16.png"
+      favicon32x32:  "/static/favicon-32x32.png"
+      # apple_touch_icon:  "/static/apple-touch-icon.png"
+      # safari_pinned_tab:  "/static/safari-pinned-tab.svg"
+  
+    defaultTheme: auto # to switch between dark or light according to browser theme
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    ShowWordCount: true
+    ShowRssButtonInSectionTermList: true
+    UseHugoToc: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    profileMode:
+        enabled: true
+        title: "Daniel Park" # optional default will be site title
+        subtitle: "Business Analyst @ Pfizer | CS @ Olin"
+        imageUrl: "https://media-exp1.licdn.com/dms/image/C4E03AQEnQYxcNjQ-kQ/profile-displayphoto-shrink_200_200/0/1640314683160?e=1665014400&v=beta&t=fvI7V1QOsMbRsEnhbRtTFpMYtVD6bFcJS2kOZMG8QVI" # optional
+        imageTitle: "dan_park_pic" # optional
+        imageWidth: 200 # custom size
+        imageHeight: 200 # custom size
+
+    socialIcons: # optional
+        - name: "Twitter"
+          url: "https://twitter.com/danjaepark"
+        - name: "GitHub"
+          url: "https://github.com/DanPark13"
+        - name: "LinkedIn"
+          url: "https://www.linkedin.com/in/danielpark13/"
+        - name: "Email"
+          url: "mailto:dpark0703@gmail.com"
+    
+    fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+      
+    outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+  
+menu:
+  main:
+    - identifier: About
+      name: About
+      # url: /projects/
+      weight: 10
+    - identifier: Posts
+      name: Posts
+      url: /archives/
+      weight: 10
+    - identifier: Tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: Search
+      name: Search
+      url: /search/
+      weight: 40
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
